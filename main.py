@@ -3,7 +3,7 @@ def open_file(file_name):
     with open(file_name, "r", encoding="utf-8") as f:
         while True:
             line = f.readline()
-            line = line.replace("!", "")
+            line = line.replace("!", "ы")
             if not line:
                 break
             links.append(line.strip())
